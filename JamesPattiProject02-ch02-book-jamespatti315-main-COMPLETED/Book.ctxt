@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Book
+comment0.text=83\ -\ create\ accessors\ for\ String\ fields\ (Think\ it\ good?)\r\n\ 84\ -\ create\ print\ utility\ methods\ for\ private\ fields(working)\r\n\ 85\ -\ modify\ object\ add\ a\ new\ private\ field\ with\ appropriate\ accessors\ (ok\ good\ I\ think)(9/20)\r\n\ \r\n86\ -\ not\ required\ (ok)\r\n\r\n87\ -\ add\ a\ printDetails\ method\ that\ displays\ formatted\ output\ for\ all\ private\ fields\ (done?)\r\n\r\n88\ -\ modify\ object\ add\ a\ new\ private\ field\ with\ appropriate\ accessors(date,\ added~)\r\n89\ -\ modify\ printDetails\ to\ add\ new\ content(done?)\r\n90\ -\ modify\ object\ add\ a\ new\ private\ field\ with\ appropriate\ accessors,\ mutators\ and\ reporting\ (uhhh\r\nkinda\ the\ same,\ guess\ we\ do\ ..edition,\ signatur\ and\ another\ string\ for\ library,\r\n91\ -\ modify\ object\ add\ a\ new\ private\ field\ with\ appropriate\ accessors,\ mutators\ and\ reporting\r\n92\ -\ modify\ object\ add\ a\ new\ private\ field\ with\ appropriate\ accessors,\ mutators\ and\ reporting\r\n\ \r\n
+comment1.params=bookAuthor\ bookTitle\ bookDate\ editionType\ signatureSign\ librarySource
+comment1.target=Book(java.lang.String,\ java.lang.String,\ java.lang.String,\ int,\ char,\ java.lang.String)
+comment1.text=\r\n\ Set\ the\ author\ and\ title\ fields\ when\ this\ object\r\n\ is\ constructed.\r\n
+comment2.params=
+comment2.target=java.lang.String\ getAuthor()
+comment3.params=
+comment3.target=java.lang.String\ getTitle()
+comment4.params=
+comment4.target=java.lang.String\ getDate()
+comment5.params=
+comment5.target=int\ editionGet()
+comment6.params=
+comment6.target=char\ signatureGet()
+comment7.params=
+comment7.target=java.lang.String\ libraryGet()
+comment8.params=
+comment8.target=void\ printDetails()
+numComments=9

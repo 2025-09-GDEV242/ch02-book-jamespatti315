@@ -20,30 +20,63 @@ class Book
     private String title;
     private int pages; //value set below in constructor
     private String refNumber; // will set it in constructor below to none aka ""
+    private int borrowed = 0; //how many times it been burrowed, incremenr this!
+    private final boolean  courseText; //work on this it binarary yes or niet
 
     /**
      * Set the author and title fields when this object
      * is constructed.
      */
-    public Book(String bookAuthor, String bookTitle, int bookPages)
+    public Book(String bookAuthor, String bookTitle, int bookPages, boolean courseTextCheck)
     {
         author = bookAuthor;
         title = bookTitle;
         pages = bookPages;
         refNumber = "";
+        courseText = courseTextCheck;
         
     }
 
+    //the last accessor, sorry if bit spaghetti but all works.
+    
+    public boolean isCourseText()
+    {
+        return courseText;
+    }
+    
     // Add the methods here ...
+    //ok mutator for burrowed, (its late getting bit tired)
+    public void incrementBurrow()
+    {
+        borrowed++;     //increments this up by one when called
+        
+    }
+    
+    //now acccessor
+    
+    public int getBorrowed()
+    {
+        
+        return borrowed;
+    }
     
     //ok here we make a muttator for the refNumber field
+    //now we modify it so ref only set if more then 3 digits.
     
     public  void setRefNumbers(String ref)
     {
-      refNumber = ref;  
+         if(ref.length() >= 3)  { 
+              refNumber = ref;  
+    }
+        else{
+            System.out.print("ERROR");
+            refNumber = "";
+        }
+    
     }
     
     //and its accessor sibling
+    
     
     public String getRefNumbers()
     {
@@ -86,17 +119,17 @@ class Book
     //here we get a spread od details, formating little wonky by been hot minute since used prints
     public void printDetails()
     {
-        System.out.print("Title: " + title);
-        System.out.print("Author: " + author);
-        System.out.print("Pages: " + pages);
-        
+        System.out.println("Title:" + title);
+        System.out.println("Author:" + author);
+        System.out.println("Pages:" + pages);
+        System.out.println("This book has been burrowed" + borrowed + "times");
         //now we need one for ref with a if condition
         if(refNumber.length() == 0) {
             refNumber = "zzz";
-            System.out.print("RefNumber is " + refNumber);
+            System.out.println("RefNumber is" + refNumber);
         }
         else {
-            System.out.print("RefNumber is " + refNumber);
+            System.out.println("RefNumber is" + refNumber);
         }
     }
 }

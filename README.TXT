@@ -15,3 +15,6 @@ Purpose of project: This project forms the basis of a set of exercises
 How to start this project: Create one or more Book instances.
 
 USER INSTRUCTIONS: Complete the exercises in Chapter 2.
+
+Back to the beggining, will redo it. going to do it right.
+Just wish me and my brother didn't get overwhelmed so easily.
